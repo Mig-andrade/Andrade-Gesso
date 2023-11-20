@@ -268,7 +268,8 @@ button,[type=button],[type=reset],[type=submit]{
     -webkit-appearance:button
 }
 button:not(:disabled),[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled){
-    cursor:pointer
+    cursor:pointer;
+	color: black;
 }
 ::-moz-focus-inner{
     padding:0;
@@ -2368,7 +2369,7 @@ textarea.form-control-lg{
 .btn-primary{
     color:black;
     background-color: white;
-    border-color:#1842b6
+    border-color:#ffca18 
 }
 .btn-primary:hover{
     color:#fff;
@@ -6376,6 +6377,11 @@ textarea.form-control-lg{
     z-index: 999;
     background-color: white !important;
     position: fixed;
+}
+@media (max-width: 400px) {
+	.bg-primary {
+		position: absolute !important;
+	}
 }
 .bg-secondary{
     background-color:#ffca18 !important;
